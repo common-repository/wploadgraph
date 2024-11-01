@@ -1,0 +1,59 @@
+/*
+ * wploadgraph stylesheet
+ */
+
+.wploadgraph h1 {
+	padding-top: 1em;
+}
+.wploadgraph h3 {
+	padding-top: 1em;
+	margin-bottom: 8px;
+}
+.wploadgraph form {
+}
+
+.wploadgraph-dashboard {
+}
+
+.wploadgraph-canvas-wrap {
+	position:relative;
+	border:1px solid #ccc;
+	background-color:white;
+	margin:0 1em 0 0;
+}
+
+#wploadgraph-chartjs-tooltip {
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 8px;
+	color: #ddd;
+	padding: 1em;
+	font: bold 12px "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+#wploadgraph-chartjs-tooltip td {
+	padding: 5px;
+	max-width: 30em;
+}
+#wploadgraph-chartjs-tooltip {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.5s all;
+	margin: 19px 0 0 -31px;
+	font-size: 14px;
+}
+#wploadgraph-chartjs-tooltip::after {
+	content: "";
+	position: absolute;
+	opacity: 0.75;
+	top: 0;
+	left: 2em;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+	margin-left: -6px;
+	margin-top: -16px;
+}
+#wploadgraph-chartjs-tooltip span {
+	font-weight: normal;
+	color: white;
+}
